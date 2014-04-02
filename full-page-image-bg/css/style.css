@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333;
+}
+.site-header {
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+}
+.site-header .bg-image {
+  background: url("rainier.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.site-header .bg-image:after {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -moz-linear-gradient(center top , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.site-header .container {
+    z-index: 1;
+}
+
+.site-header .curtain {
+    background-color: rgba(37, 83, 95, 0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.site-branding, .site-desc {
+  z-index: 2;
+  position: relative;
+}
+.site-branding h2 {
+  color: #fff; 
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 120px;
+  padding-top: 400px;
+}
+.long-site-description {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+}
+.container {
+  width: 1170px; 
+  margin: 0 auto;
+}
